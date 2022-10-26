@@ -1,0 +1,353 @@
+
+@media (min-width: 320px) and (max-width: 640px) {
+    header{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px;
+        border: 2px solid black;
+        border-radius: 30px;
+        background-color: black;
+        text-align: center;
+    }
+
+    #logo {
+        display: inline-block;
+        margin: 0 auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 100%;
+        height: wrap;
+    }
+
+    a.header-a {
+        font-size: 24px;
+        color: black;
+        margin-left: 12px;
+        text-decoration: underline;   
+    }
+
+    a:hover.header-a {
+        font-size: 24px;
+        color: black;
+        margin-left: 12px;
+        text-decoration: none;
+    }
+
+    div:hover.promo-item {
+        opacity: 0.4;
+    }
+
+    div:hover.main-item {
+        opacity: 0.4;
+    }
+
+    body {
+        background: url(https://st2.depositphotos.com/1454700/6392/i/450/depositphotos_63926523-stock-photo-boxing-ring-in-arena.jpg) no-repeat center center fixed;
+        background-size: cover;
+        padding: 12px;
+    }
+
+    img.mainImg {
+        width: 100%;
+        height: wrap;
+        border: 3px solid white;
+        border-radius: 30px;
+    }
+
+    img.promoImg {
+        width: 100%;
+        height: wrap;
+        border: 3px solid white;
+        border-radius: 30px;
+    }
+
+    p.main-b {
+        font-size: 24px;
+        color: white;
+        vertical-align: top;
+    }
+
+    b.main-b {
+        font-size: 24px;
+        color: white;
+        vertical-align: top;
+    }
+
+    div.main-catalog {
+        margin: auto;
+        width: 90%;
+        border: 3px solid black;
+        border-radius: 30px;
+        padding: 12px;
+        background-color: black;
+        text-align: center;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    div.promo-catalog {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        border: 3px solid black;
+        border-radius: 30px;
+        padding: 12px;
+        background-color: black;
+        text-align: center;
+    }
+
+    #space-between{
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    div.left-list {
+        padding-right: 6px;
+    }
+
+    div.right-list {
+        padding-left: 6px;
+    }
+
+    h1 {
+        margin: auto;
+        width: 91%;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1440) {
+    header{
+        width: 90%;
+        padding: 12px;
+        border: 2px solid black;
+        border-radius: 30px;
+        background-color: black;
+    }
+
+    #logo {
+        margin: 0 auto;
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 100%;
+        height: wrap;
+    }
+
+    a.header-a {
+        font-size: 24px;
+        color: black;
+        margin-left: 55px;
+        text-decoration: underline;   
+    }
+
+    a:hover.header-a {
+        font-size: 24px;
+        color: black;
+        margin-left: 55px;
+        text-decoration: none;
+    }
+
+    div:hover.promo-item {
+        opacity: 0.5;
+    }
+
+    div:hover.main-item {
+        opacity: 0.5;
+    }
+
+    body {
+        background: url(https://st2.depositphotos.com/1454700/6392/i/450/depositphotos_63926523-stock-photo-boxing-ring-in-arena.jpg) no-repeat center center fixed;
+        background-size: cover;
+        padding: 40px;
+    }
+
+    img.mainImg {
+        width: 100%;
+        height: wrap;
+        border: 3px solid white;
+        border-radius: 30px;
+    }
+
+    img.promoImg {
+        width: 100%;
+        height: wrap;
+        border: 3px solid white;
+        border-radius: 30px;
+    }
+
+    p.main-b {
+        font-size: 24px;
+        color: white;
+        vertical-align: top;
+    }
+
+    b.main-b {
+        font-size: 24px;
+        color: white;
+        vertical-align: top;
+    }
+
+    div.main-catalog {
+        margin: auto;
+        width: 90%;
+        border: 3px solid black;
+        border-radius: 30px;
+        padding: 12px;
+        background-color: black;
+        text-align: center;
+    }
+
+    h2 {
+        color: white;
+    }
+
+    div.promo-catalog {
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        border: 3px solid black;
+        border-radius: 30px;
+        padding: 12px;
+        background-color: black;
+        text-align: center;
+    }
+
+    #space-between{
+        display: flex; 
+        justify-content: space-between;
+    }
+
+    div.left-list {
+        padding: 12px;
+    }
+
+    div.right-list {
+        padding: 12px;
+    }
+
+    h1 {
+        margin: auto;
+        width: 91%;
+    }
+}
+
+header{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 30px;
+    background-color: black;
+    text-align: center;
+}
+
+#logo {
+    display: inline-block;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 100%;
+    height: wrap;
+}
+
+a.header-a {
+    font-size: 24px;
+    color: black;
+    margin-left: 55px;
+    text-decoration: underline;   
+}
+
+a:hover.header-a {
+    font-size: 24px;
+    color: black;
+    margin-left: 55px;
+    text-decoration: none;
+}
+
+div:hover.promo-item {
+    opacity: 0.5;
+}
+
+div:hover.main-item {
+    opacity: 0.5;
+}
+
+body {
+    background: url(https://st2.depositphotos.com/1454700/6392/i/450/depositphotos_63926523-stock-photo-boxing-ring-in-arena.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+img.mainImg {
+    width: 100%;
+    height: wrap;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
+img.promoImg {
+    width: 100%;
+    height: wrap;
+    border: 3px solid white;
+    border-radius: 30px;
+}
+
+p.main-b {
+    font-size: 24px;
+    color: white;
+    vertical-align: top;
+}
+
+b.main-b {
+    font-size: 24px;
+    color: white;
+    vertical-align: top;
+}
+
+div.main-catalog {
+    margin: auto;
+    width: 90%;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 12px;
+    background-color: black;
+    text-align: center;
+}
+
+h2 {
+    color: white;
+}
+
+div.promo-catalog {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 3px solid black;
+    border-radius: 30px;
+    padding: 12px;
+    background-color: black;
+    text-align: center;
+}
+
+#space-between{
+    display: flex; 
+    justify-content: space-between;
+}
+
+div.left-list {
+    padding: 12px;
+}
+
+div.right-list {
+    padding: 12px;
+}
+
+h1 {
+    margin: auto;
+    width: 91%;
+}
