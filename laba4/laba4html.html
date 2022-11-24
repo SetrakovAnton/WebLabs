@@ -9,15 +9,51 @@
 
     <title>Последние публикации</title>
 </head>
-<body>
-    <header class="header">
-        <div class="container">
+<body id="body">
+
+    <div class="burger_blocks" id="burger_blocks" style="display: none">
+        <div class="burger_container">
+            <div class="logo">
+                <img src="/Users/antonsetrakov/Downloads/webLab4Pictures/Blog 8/BlogLogo.svg" alt="BlogLogo">
+            </div>
+            <div class="close" onclick="closeMenu()">
+                <img src="/Users/antonsetrakov/Downloads/webLab4Pictures/Blog 7/Profile.svg" alt="BlogLogo">
+            </div>
+        </div>
+        <nav class="nav_menu">
+            <div class="img_profile_div_menu">
+                <img class="img_profile" src="/Users/antonsetrakov/Downloads/webLab4Pictures/Blog 7/Profile.svg" alt="photo">
+            </div>
+
+            <div class="nav_links_menu_first">
+                <a class="nav_link white_link_menu" href="#">Войти</a>
+            </div>
+
+            <div class="nav_links_menu_second">
+                <a class="nav_link white_link_menu" href="#">Зарегистрироваться</a>
+            </div>
+        </nav>
+        <div class="main_navigation_content">
+            <h1 class="title_of_menu">Рубрики</h2>
+            <div class="headings_menu">
+                <button class="headings_btn blue_link" data-categories="Obuchenie">Обучение</button>
+                <button class="headings_btn blue_link" data-categories="Cariera">Карьера</button>
+                <button class="headings_btn blue_link" data-categories="Figma">Figma</button>
+                <button class="headings_btn blue_link" data-categories="Console">Консоль</button>
+                <button class="headings_btn blue_link" data-categories="Git">Git</button>
+                <button class="headings_btn blue_link" data-categories="News">Новости</button>
+            </div>
+        </div>
+    </div>
+    
+    <header>
+        <div id="header_container" class="container" style="display: block">
             <div class="header_content">
                 <div class="logo">
                     <img src="/Users/antonsetrakov/Downloads/webLab4Pictures/Blog 8/BlogLogo.svg" alt="BlogLogo">
                 </div>
 
-                <div class="menu-btn">
+                <div class="menu-btn" onclick="toggleMenu()">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -40,7 +76,7 @@
     </header>
 
     <div class="main">
-        <div class="container">
+        <div id="main_container" class="container" style="display: block">
             <h1 class="main_title">Последние публикации</h1>
 
             <div class="main_content">
@@ -152,16 +188,11 @@
                     </div>
                 </div>
             </div>
-            <div class="burger_blocks">
-                <div class="container">
-
-                </div>
-            </div>
         </div>
     </div>
 
     <footer class="footer">
-        <div class="container">
+        <div id="footer_container" class="container" style="display: block">
             <div class="footer_content">
                 <div class="footer_nav">
                     <a href="https://github.com/SetrakovAnton" class="nav_link blue_link">Об авторе</a>
@@ -172,8 +203,8 @@
             </div>
         </div>
     </footer>
-
-    <script src="/Applications/программирование/извучение создания сайтов/webLabs/laba4/laba4javascript.js"></script>
 </body>
+
+<script src="/Applications/программирование/извучение создания сайтов/webLabs/laba4/laba4javascript.js"></script>
 
 </html>

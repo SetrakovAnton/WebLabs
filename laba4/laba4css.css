@@ -3,9 +3,6 @@ body {
 }
 *,
 *::after,
-*::before {
-    box-sizing: border-box;
-}
 h1, h2, h3, h4, h5, h6, ul, p {
     padding: 0;
     margin: 0;
@@ -37,12 +34,14 @@ button {
 .show {
     display: block;
 }
-.header {
+header {
     background-color: #624C90;
     padding: 15px 60px 15px 60px;
 }
 .logo {
     z-index: 5;
+    display: flex;
+    align-items: center;
 }
 .header_content {
     display: flex;
@@ -76,6 +75,7 @@ button {
     border-bottom: 1px solid #366AF3;
 }
 .main .container {
+    box-sizing: border-box;
     position: relative;
 }
 .main_title {
@@ -205,9 +205,6 @@ button {
     margin-top: 3%;
     justify-content: center;
 }
-.burger_blocks {
-    display: none;
-}
 .zero_marginTop {
     margin-top: 0 !important;
 }
@@ -257,8 +254,14 @@ button {
 }
 
 @media screen and (max-width: 670px) {
-    .header {
-        padding: 15px 0;
+    .header_content {
+        justify-content: space-between;
+    }
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
     }
     .menu-btn {
         display: block;
@@ -292,5 +295,63 @@ button {
     }
     .blog_year {
         margin-top: 30px;
+    }
+
+    .burger_container {
+        size: 100%;
+        background-color: #624C90;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 15px;
+    }
+
+    .burger_container .logo {
+        display: flex;
+    }
+    .burger_blocks {
+        background-color: #624C90;
+        padding-left: 15px;
+    } 
+
+    .close {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        margin-right: 15px;
+    }
+
+    .nav_menu {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .white_link_menu {
+        color: #fff;
+        border-bottom: 1px solid #fff;
+    }
+
+    .nav_links_menu_first {
+        display: flex;
+        align-items: center;
+    }
+
+    .nav_links_menu_second {
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+    }
+
+    .main_navigation_content {
+        margin-top: 40px;
+    }
+
+    .title_of_menu {
+        color:#C2B4DD;
+    }
+
+    .headings_menu {
+        margin-top: 10px;
     }
 }

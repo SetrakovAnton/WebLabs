@@ -38,28 +38,30 @@ headingsBtn.forEach(it => {
     it.addEventListener("click", () => { FilterMainItems(it.dataset.categories) });
 });
 
-let menuBtn = document.querySelector('.menu-btn');
-let nav = document.querySelector('.nav');
-let mainNavigation = document.querySelector('.main_navigation');
-let burgerBlocks = document.querySelector('.burger_blocks');
-let mainTitle = document.querySelector('.main_title');
-let mainNavigationTitle = document.querySelector('.main_navigation_title');
+function toggleMenu() {
+    var menuBox = document.getElementById('burger_blocks');   
+    var headerContainer = document.getElementById('header_container');   
+    var mainContainer = document.getElementById('main_container');   
+    var footerContainer = document.getElementById('footer_container');   
 
-menuBtn.addEventListener('click', () => {
-    let heightHeader = document.querySelector('.header').clientHeight;
+    menuBox.style.display = "block";
 
-    let heightWindow = document.documentElement.clientHeight;
-    burgerBlocks.style.height = heightWindow - heightHeader + 'px';
+    headerContainer.style.display = "none";
+    mainContainer.style.display = "none";
+    footerContainer.style.display = "none";
+    document.body.style.backgroundColor = "#624C90"
+  }
 
-    burgerBlocks.appendChild(nav);
-    burgerBlocks.appendChild(mainNavigation);
+  function closeMenu() {
+    var headerContainer = document.getElementById('header_container');   
+    var mainContainer = document.getElementById('main_container');   
+    var footerContainer = document.getElementById('footer_container'); 
+    var menuBox = document.getElementById('burger_blocks'); 
+    
+    menuBox.style.display = "none";
 
-    burgerBlocks.classList.toggle('show_block');
-
-    menuBtn.classList.toggle('active');
-    mainTitle.classList.toggle('zero_marginTop');
-    nav.classList.toggle('show_nav');
-    mainNavigation.classList.toggle('show_block');
-    mainNavigationTitle.classList.toggle('burger_title_cl');
-});
-Footer
+    headerContainer.style.display = "block"
+    mainContainer.style.display = "block";
+    footerContainer.style.display = "block";
+    document.body.style.backgroundColor = "white"
+  }
